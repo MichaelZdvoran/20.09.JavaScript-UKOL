@@ -1,6 +1,6 @@
 
 document.getElementById('add-image').addEventListener('click', function() {
-    const imageUrl = document.getElementById('image-url').src;  // Získat URL obrázku
+    const imageUrl = document.getElementById('image-url').value.trim();  // Získat URL obrázku
     const imageTitle = document.getElementById('image-title').value.trim();  // Získat název obrázku
 
     if (imageUrl && imageTitle) {
